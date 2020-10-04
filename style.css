@@ -1,0 +1,68 @@
+.custom-font{
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.lincoln-image{
+  background-image: url(https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTcyMzkwNDQ4NDA3NTIxMDg0/abraham-lincoln-gettyimages-530194205.jpg);
+  height: 60vh;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 576px)
+{
+.hidden{
+  display: none;
+}
+}
+
+.spill{
+  position: absolute;
+  bottom: 10px;
+  left: 700px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 576px)
+{
+  .spill{
+    position: static;
+  }
+}
+
+/*Can try having card stay in plays between small and medium breakpoints by making static default rule, and affecting the position with a media query.*/
+
+.hannibal-width{
+  width: 20vw;
+}
+
+.big-card{
+  height: 40vh;
+  width: 40vh;
+}
+
+.small-card{
+  height: 20vh;
+  width: 20vh;
+}
+
+@keyframes textcolorchange {
+  from {color: black;}
+  to {color: white;}
+}
+
+.text-change{
+  animation-name: textcolorchange;
+  animation-duration: 4s;
+  color: black;
+}
+
+@keyframes bgcolorchange {
+  from {background-color: white;}
+  to {background-color: blue;}
+}
+
+.bgc-change{
+  animation-name: bgcolorchange;
+  animation-duration: 4s;
+  background-color: white;
+}
